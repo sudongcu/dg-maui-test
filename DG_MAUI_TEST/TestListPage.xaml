@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DG_MAUI_TEST.TestListPage">
+    <ContentPage.Content>
+		<StackLayout 
+            Spacing="25"
+            Padding="30,30,30,30" >
+
+			<HorizontalStackLayout >
+
+				<Button Text="Back"
+						BackgroundColor="Gray"
+						TextColor="White"
+						HeightRequest="50"
+						WidthRequest="100"
+						x:Name="backBtn"
+						Clicked="backBtn_Clicked"
+						/>
+
+			</HorizontalStackLayout>
+
+			<HorizontalStackLayout >
+
+				<Label Text="This is Label Test"
+					   FontSize="Large"
+					   Margin="0,0,50,0"
+					   x:Name="moveToLbl"					   
+					   />
+
+				<Button Text="This is Button Test"
+						BackgroundColor="MediumPurple"
+						TextColor="White"
+						x:Name="moveToBtn"
+						Clicked="moveToBtn_Clicked"
+						/>
+
+			</HorizontalStackLayout>
+
+
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

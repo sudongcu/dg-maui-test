@@ -48,4 +48,29 @@
 		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
 	</ItemGroup>
 
+	<ItemGroup>
+		<MauiXaml Remove="Page1.xaml" />
+		<MauiXaml Remove="TestListPage.xaml" />
+		<MauiXaml Remove="TestButtonPage.xaml" />
+		<MauiXaml Remove="TestLabelPage.xaml" />
+		
+	</ItemGroup>
+	
+	<ItemGroup>
+		<EmbeddedResource Include="Page1.xaml">
+		  <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+		</EmbeddedResource>
+		<EmbeddedResource Include="TestListPage.xaml">
+		  <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+		</EmbeddedResource>
+		<EmbeddedResource Include="TestButtonPage.xaml">
+			<Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+		</EmbeddedResource>
+		<EmbeddedResource Include="TestLabelPage.xaml">
+			<Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+		</EmbeddedResource>
+	</ItemGroup>
+
+
+
 </Project>

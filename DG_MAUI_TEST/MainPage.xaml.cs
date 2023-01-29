@@ -16,6 +16,11 @@ public partial class MainPage : ContentPage
 	{
 		count++;
 
+		if (CounterBtn.Text == "Counted at max limit")
+		{
+			Application.Current.MainPage = new NavigationPage(new TestListPage());
+		}
+
 		if (count > maxCount)
 		{
 			CounterBtn.Text = $"Counted at max limit";
